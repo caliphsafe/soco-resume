@@ -1,22 +1,32 @@
-# Southcoast Health — Personal Computer Technician | Digital Résumé
+# Southcoast Health Application | Digital Résumé
 
-A 43Dou-designed digital résumé and cover letter for **Abdourahmane Doumbouya**, tailored to Southcoast Health's **Personal Computer Technician** opening (Job ID 50489, St. Luke's Hospital, New Bedford, MA).
+A responsive, professional 43Dou digital cover letter and résumé for **Abdourahmane Doumbouya**, applying for the **Personal Computer Technician** role at Southcoast Health, St. Luke's Hospital, New Bedford, MA (Job ID 50489).
 
-## Features
+## Site structure
 
-- Responsive, accessible résumé and cover-letter views inspired by the user's earlier Puma résumé
-- Continuous technical support career covering **MA2K, 43Dou, SAFE Agency, Thrive Market, Honey, LogMeIn, and Experian Data Quality**
-- Experian internal help-desk support for employee network accounts, workstation hardware and software
-- Functional job category filters, email/contact links, and browser Print / Save PDF
-- Conceptual technical network visualization (not real-time telemetry)
-- Self-contained `index.html`: CSS, JavaScript and SVG favicon are embedded; no build process or API keys
+1. **Cover letter first:** Personal introduction and job-specific experience.
+2. **Résumé:** Professional summary, technical skills, full employment history and education.
+3. **Contact:** Direct email link after the résumé.
+
+## Technical focus
+
+- Six technical skill groups with 36 job-relevant capabilities, including **Active Directory**, **DNS**, **Microsoft networking**, **computer imaging**, **Windows and Mac support**, **wireless**, **smartphones**, **remote support**, and **help desk operations**.
+- Exactly three technical support bullets for each of seven jobs: MA2K Impression, 43Dou, SAFE Agency, Thrive Market, Honey, LogMeIn and Experian Data Quality.
+- Current hands-on technical support, hardware repair and U.S.–Guinea cross-country networking experience.
+- Internal Experian help desk, LogMeIn Rescue and team leadership, Honey help desk documentation, and Thrive Market technical issue monitoring.
+
+## Design
+
+Uses a **brand-inspired** teal (`#008573`) and light blue (`#70B9E8`) visual palette with a clean, readable layout. It does not use or claim ownership of Southcoast Health's logo or any official endorsement. The site is an independent job application.
+
+The site is responsive, accessible with semantic sections and keyboard focus, and print-friendly. Use the **Print / PDF** button to open the browser's print or Save as PDF dialog.
 
 ## Deployment
 
-This is a **static website**. Import `caliphsafe/soco-resume` into Vercel, select **Other** as the framework preset, leave build command blank, and deploy from repository root. GitHub Pages or any static host also works.
+This is a self-contained static `index.html` with inline CSS. No dependencies, secrets, third-party assets or build command are required.
 
-To update resume and cover-letter copy, edit `index.html`. The website's Print / Save PDF button uses the browser's print dialog. Application-ready PDF and editable Word résumé versions are also delivered separately in ChatGPT.
+To host on Vercel, import this repository, select **Other** as the framework preset and deploy from the repository root. It may also be hosted with GitHub Pages or another static web host.
 
-## Disclaimer
+## Editing
 
-An independent applicant portfolio. **Not affiliated with or endorsed by Southcoast Health.**
+Edit `index.html`. The skills and role history are part of the document's HTML so changes are visible immediately after deployment.
