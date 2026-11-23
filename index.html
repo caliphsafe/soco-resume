@@ -98,7 +98,12 @@ button{font:inherit;cursor:pointer}
 @media(max-width:660px){.top-inner{padding:12px 18px;gap:12px}.identity small{display:none}.monogram{width:37px;height:37px;font-size:15px}.navigation{gap:2px}.navigation a{padding:6px 7px;font-size:11px}.nav-print{padding:7px 8px;font-size:11px}.page{width:100%;margin:0 auto 28px}.paper{border:0;border-radius:0;box-shadow:none}.letter-banner{padding:29px 22px 25px}.letter-banner:after{right:-175px}.letter-body-wrap{display:block;padding:25px 22px 30px}.letter-aside{display:flex;flex-wrap:wrap;gap:6px 28px;border:0;border-bottom:1px solid var(--line);margin-bottom:24px;padding:0 0 9px}.rail-value{margin-bottom:15px}.letter-text{font-size:14.6px;line-height:1.76}.resume{padding:35px 22px}.resume-section{margin-top:24px;padding-top:21px}.section-heading h2{font-size:18px}.skill-grid{grid-template-columns:1fr}.skill-card:hover{transform:none}.job{grid-template-columns:1fr;gap:4px;padding:18px 0}.job-meta{display:flex;gap:12px;align-items:center}.job-number{font-size:15px;margin:0}.job-date{font-size:12px}.job-heading span{display:none}.after{display:block;padding:24px 22px}.after .action-link{margin-top:16px}.footer{padding:0 22px 18px}}
 @media(max-width:390px){.navigation a[href="#cover-letter"]{display:none}.identity strong{font-size:12px}.nav-print{white-space:nowrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.skill-card{transition:none}}
+.application-downloads{padding:18px clamp(18px,4vw,42px);border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.application-downloads h2{margin:0 0 10px;color:var(--navy);font-size:18px}
+.download-links{display:flex;flex-wrap:wrap;gap:8px}
+.download-links a{display:inline-block;text-decoration:none;white-space:normal}
 @media print{
+.application-downloads{display:none}
 @page{size:letter;margin:.60in .67in}
 body{background:#fff!important;color:#222!important;font-size:10.2pt}
 .site-top,.brand-rule,.after,.footer{display:none!important}
@@ -131,10 +136,18 @@ a{color:inherit;text-decoration:none}
 <a class="skip-link" href="#cover-letter">Skip to cover letter</a>
 <header class="site-top"><div class="top-inner">
   <a class="identity" href="#cover-letter" aria-label="Return to cover letter"><span class="monogram">AD</span><span><strong>Abdourahmane Doumbouya</strong><small>Personal Computer Technician application</small></span></a>
-  <nav class="navigation" aria-label="Application navigation"><a href="#cover-letter">Cover letter</a><a href="#resume">Résumé</a><a href="#technical-skills">Skills</a><a class="nav-print" href="Abdourahmane_Doumbouya_Southcoast_IT_Support_Resume_v3.pdf" download>Download Résumé PDF</a></nav>
+  <nav class="navigation" aria-label="Application navigation"><a href="#cover-letter">Cover letter</a><a href="#resume">Résumé</a><a href="#technical-skills">Skills</a><a class="nav-print" href="#downloads">Downloads</a></nav>
 </div></header>
 <div class="brand-rule" aria-hidden="true"></div>
 <div class="page"><div class="paper"><main>
+<section class="application-downloads" id="downloads" aria-labelledby="downloads-title">
+  <h2 id="downloads-title">Application downloads</h2>
+  <div class="download-links">
+    <a class="nav-print" href="Abdourahmane_Doumbouya_Southcoast_IT_Support_Resume_v3.pdf" download>Download Résumé PDF</a>
+    <a class="nav-print" href="Abdourahmane_Doumbouya_Southcoast_Cover_Letter.pdf" download>Download Cover Letter PDF</a>
+    <a class="nav-print" href="Abdourahmane_Doumbouya_Southcoast_Application.pdf" download>Download Cover Letter + Résumé PDF</a>
+  </div>
+</section>
 <section class="letter" id="cover-letter" aria-labelledby="letter-title">
   <div class="letter-banner"><div class="letter-banner-content"><p class="eyebrow">Southcoast Health / St. Luke's Hospital / New Bedford, MA</p><h1 id="letter-title">Cover letter</h1><p class="opening">Application for Personal Computer Technician</p></div></div>
   <div class="letter-body-wrap">
